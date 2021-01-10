@@ -1,0 +1,12 @@
+[Unit]
+Description=RFID Lock Control.
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/develop/RFID_Lock_Control/main.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
