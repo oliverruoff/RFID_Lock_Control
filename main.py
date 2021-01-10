@@ -3,8 +3,8 @@
 import RPi.GPIO as GPIO
 import time
 
-import rfid
 import stepper
+import rfid
 import io
 
 REGISTERED_RFID_UIDS = [455618101515, 659764798954]
