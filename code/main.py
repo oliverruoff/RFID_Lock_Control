@@ -73,10 +73,10 @@ if __name__ == "__main__":
                 stepper.turn_stepper(90, True)
                 time.sleep(0.5)
                 for _ in range(2):
-                    stepper.turn_stepper(30, False)
-                    time.sleep(0.5)
-                    stepper.turn_stepper(30, True)
-                    time.sleep(0.5)
+                    stepper.turn_stepper(20, False)
+                    time.sleep(0.2)
+                    stepper.turn_stepper(20, True)
+                    time.sleep(0.2)
                 stepper.turn_stepper(90, False)
             else:
                 print('Unauthorized! Sorry :P')
