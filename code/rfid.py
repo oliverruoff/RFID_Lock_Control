@@ -5,7 +5,7 @@ reader = SimpleMFRC522()
 
 def read_rfid():
     id, text = reader.read()
-    return id, text
+    return str(id), text
 
 
 def write_rfid(text_to_write):
