@@ -15,7 +15,7 @@ LOG_FILE = 'log.txt'
 def save_new_uid(uid):
     inout.append_text_line_to_file(
         LOG_FILE,
-        str(datetime.now) + ' Registered new uid: ' + uid)
+        datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ' Registered new uid: ' + uid)
     inout.append_text_line_to_file(REGISTERED_UIDS_FILE, uid)
     registered_uids.append(uid)
     print('Successfully registered new uid:', uid)
