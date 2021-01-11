@@ -1,6 +1,6 @@
 def append_text_line_to_file(file_path, text):
     with open(file_path, "a") as myfile:
-        myfile.writeline(text + "\n")
+        myfile.write(text + "\n")
 
 
 def read_lines_from_file(file_path):
