@@ -5,6 +5,7 @@ After=multi-user.target
 [Service]
 Type=simple
 User=pi
+WorkingDirectory=/home/pi/develop/RFID_Lock_Control/code
 ExecStart=/usr/bin/python3 /home/pi/develop/RFID_Lock_Control/code/main.py
 Restart=on-abort
 
