@@ -15,7 +15,7 @@ GPIO.setup(STEP, GPIO.OUT)
 GPIO.setup(STEPPER_ACTIVATION_PIN, GPIO.OUT)
 
 GPIO.output(DIR, CW)
-delay = .001
+delay = .0005
 
 
 def turn_stepper(degree, clockwise=True):
