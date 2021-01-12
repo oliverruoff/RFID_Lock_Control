@@ -70,14 +70,9 @@ if __name__ == "__main__":
                 inout.append_text_line_to_file(
                     LOG_FILE,
                     datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ' Opened lock with uid: ' + uid)
-                stepper.turn_stepper(90, True)
+                stepper.turn_stepper(110, True)
                 time.sleep(0.5)
-                for _ in range(2):
-                    stepper.turn_stepper(20, False)
-                    time.sleep(0.3)
-                    stepper.turn_stepper(20, True)
-                    time.sleep(0.3)
-                stepper.turn_stepper(90, False)
+                stepper.turn_stepper(110, False)
             else:
                 print('Unauthorized! Sorry :P')
                 inout.append_text_line_to_file(
