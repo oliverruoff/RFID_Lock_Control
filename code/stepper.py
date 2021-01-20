@@ -30,3 +30,12 @@ def turn_stepper(degree, clockwise=True):
         GPIO.output(STEP, GPIO.LOW)
         sleep(delay)
     GPIO.output(STEPPER_ACTIVATION_PIN, GPIO.LOW)
+
+
+def toggle_stepper(degree, repetitions, delay, start_clockwise=True):
+    clockwise = start_clockwise
+    for _ in range(repetitions):
+        for __ in range(2):
+            turn_stepper(degree, clockwise)
+            clockwise = False if clockwise else True
+            sleep(delay)
